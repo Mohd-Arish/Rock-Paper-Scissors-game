@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: black;
+}
+
+/* .all-width{
+    max-height: 1200px;
+    margin: auto;
+} */
+
+.con{
+    padding: 75px 130px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px 5px  purple;
+}
+
+.res-img{
+    display: flex;
+    gap: 180px;
+}
+
+.res-img img{
+width: 120px;
+}
+
+.user-res{
+    transform: rotate(90deg);
+}
+
+.user-res p{
+    text-align: center;
+    color: purple;
+    font-size: 20px;
+}
+
+.comp-res{
+    transform: rotate(-90deg) rotateY(360deg) ;
+}
+
+.comp-res p{
+    text-align: center;
+    color: purple;
+    font-size: 20px;
+}
+
+.res{
+    text-align: center;
+    font-size: 40px;
+    margin: 30px 20px;
+    color: purple;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50;
+}
+
+
+.options img{
+    width: 75px;
+}
+  
+
+.op{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.op:hover{
+    opacity: 1;
+}
+
+.op.active{
+    opacity: 1;
+}
+
+.options img{
+    pointer-events: none;
+}
+
+.op p{
+    font-size: 22px;
+    margin: 12px;
+    color: purple;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+    .con {
+        padding: 3%;
+    }
+    
+    .res-img img {
+        width: 100px;
+    }
+
+    .res {
+        font-size: 24px;
+    }
+
+    .options img {
+        width: 40px;
+    }
+
+    .op p {
+        font-size: 14px;
+    }
+}
